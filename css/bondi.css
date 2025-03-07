@@ -1,0 +1,284 @@
+/* Starting Of Global Varaibles */
+
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+/* Ending Of Global Varaibles */
+
+/* Starting Of Global Rules */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Ending Of Global Rules */
+
+/* Starting Of Custom FrameWork */
+
+.btn-main {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+
+.btn-main:hover {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* Ending Of Custom FrameWork */
+
+/* Starting Of NavBar */
+
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  transform: 0.3s;
+  -webkit-transform: 0.3s;
+  -moz-transform: 0.3s;
+  -ms-transform: 0.3s;
+  -o-transform: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-inline-start: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  border-color: #FFF;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Ending Of NavBar */
+
+/* Starting Of Landing */
+
+.landing {
+  min-height: calc(100vh - 72px);
+  background-color: var(--dark-color);
+}
+
+/* Ending Of Landing */
+
+/* Starting Of Features */
+
+.features .icons-holder {
+  height: 200px;
+}
+
+.features .icons-holder .number {
+  height: 12rem;
+  color: var(--section-color);
+}
+
+.features .icons-holder .icon {
+  color: var(--green-color);
+}
+
+.features .icons-holder .number,
+.features .icons-holder .icon {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.features .content h3 {
+  color: var(--yellow-color);
+}
+
+/* Ending Of Features */
+
+/* Starting Of Our Work */
+
+.our-work {
+  background-color: var(--section-color);
+}
+
+.our-work ul li:not(:first-of-type) > a {
+  color: #000;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.our-work ul li:not(:first-of-type) > a:hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  padding: 5px;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51 209 204 / 76%);
+  color: #FFF;
+  font-weight: bold;
+  font-size: 32px;
+  position: absolute;
+  left: -100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.our-work .box:hover::before {
+  left: 5px;
+}
+
+/* Ending Of Our Work */
+
+/* Starting Of Team */
+
+.team {
+  background-color: var(--section-color);
+}
+
+.team .head h1 {
+  color: var(--yellow-color);
+}
+
+.team .member-name {
+  background-color: var(--green-color);
+}
+
+/* Ending Of Team */
+
+/* Starting Of Project */
+
+.project {
+  background-color: var(--dark-color);
+}
+
+
+/* Ending Of Project */
+
+/* Starting Of Blog */
+
+.blog .box {
+  height: 275px;
+}
+
+/* Ending Of Blog */
+
+/* Starting Of Subscribe */
+
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe input[type="email"] {
+  background-color: transparent;
+  color: #FFF;
+}
+
+.subscribe input[type="email"]::placeholder {
+  color: #FFF;
+  text-transform: capitalize;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+}
+
+/* Ending Of Subscribe */
+
+/* Starting Of Footer */
+
+footer {
+  background-color: var(--dark-color);
+}
+
+footer .blue {
+  color: var(--green-color);
+}
+
+footer .yellow {
+  color: var(--yellow-color);
+}
+
+footer svg {
+  width: 20px;
+  height: 20px;
+}
+
+footer svg.fa-facebook {
+  background-color: #1877F2;
+}
+
+footer svg.fa-twitter {
+  background-color: #1DA1F2;
+}
+
+footer svg.fa-linkedin {
+  background-color: #0077B5;
+}
+
+footer svg.fa-youtube {
+  background-color: #FF0000;
+}
+
+/* Ending Of Footer */
